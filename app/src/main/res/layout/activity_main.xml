@@ -1,99 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity"
-    android:background="@drawable/main_back"
-    >
+    android:background="@drawable/bg__"
+    tools:context=".MainActivity">
 
 
-    <RelativeLayout
-        android:id="@+id/searchHolder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <EditText
-            android:id="@+id/searchId"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="16dp"
-            android:layout_toStartOf="@id/searchText"
-            android:background="@drawable/search_back"
-            android:fontFamily="@font/bangers"
-            android:hint="Search Here"
-            android:textColorHint="#6C000000"
-            android:paddingStart="12dp"
-
-
-            />
-
-<RelativeLayout
-    android:layout_width="52dp"
-    android:layout_height="42dp"
-    android:layout_alignParentEnd="true"
-    android:layout_centerVertical="true"
-    android:id="@+id/searchText"
-    android:background="@drawable/search_back2"
-    android:padding="5dp"
-    android:layout_marginTop="36dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-
-
-    >
-    <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:src="@drawable/ic_baseline_search_24"
-       android:layout_centerInParent="true"
-        />
-
-</RelativeLayout>
-
-
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/banner_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical"
-
+    <FrameLayout
+        android:id="@+id/fragmentContainerID"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/searchHolder">
-
-
-        <FrameLayout
-            android:id="@+id/fragmentContainerID"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/viewpagerId"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </RelativeLayout>
 
 
     <RelativeLayout
@@ -109,20 +31,49 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <me.ibrahimsn.lib.SmoothBottomBar
-            android:id="@+id/bottomBar"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            app:cornerRadius="25dp"
-            app:iconSize="22dp"
-            app:iconTint="#727272"
-            app:iconTintActive="#FA2A28"
-            app:indicatorColor="#D4CCCC"
-            app:indicatorRadius="8dp"
-            app:menu="@menu/menu"
-            app:textColor="#FA2A28"
-            app:textSize="14sp" />
+        <!--            <me.ibrahimsn.lib.SmoothBottomBar
+                        android:id="@+id/bottomBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        app:cornerRadius="25dp"
+                        app:iconSize="22dp"
+                        app:iconTint="#727272"
+                        app:iconTintActive="#FA2A28"
+                        app:indicatorColor="#D4CCCC"
+                        app:indicatorRadius="8dp"
+                        app:menu="@menu/menu"
+                        app:textColor="#FA2A28"
+                        app:textSize="14sp" />-->
     </RelativeLayout>
+
+    <!--
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    -->
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottom_navigation_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55mdp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:mbn_backgroundBottomColor="@color/grey_100"
+        app:mbn_circleColor="@color/white"
+        app:mbn_countBackgroundColor="#ff6f00"
+        app:mbn_countTextColor="#ffffff"
+        app:mbn_defaultIconColor="#90a4ae"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="@color/red_800"
+        app:mbn_shadowColor="#1f212121" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

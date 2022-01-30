@@ -4,39 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.PlayList_Fragment"
     android:scrollbars="none"
-    >
+    tools:context=".Fragment.PlayList_Fragment">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/top_back">
+        android:background="@color/white"
+        android:padding="@dimen/_5mdp">
+
         <androidx.cardview.widget.CardView
+            android:id="@+id/tomJerryCard"
             android:layout_width="match_parent"
             android:layout_height="225dp"
             app:cardBackgroundColor="#FEFEFE"
+            app:cardCornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="20dp"
-            android:id="@+id/tomJerryCard"
-            >
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="4dp"
                 android:orientation="vertical"
-                >
+                android:padding="4dp">
 
                 <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:src="@drawable/tom_and_jerrry"
                     android:scaleType="centerCrop"
-                    app:riv_corner_radius="20dp"/>
+                    android:src="@drawable/tom_and_jerrry"
+                    app:riv_corner_radius="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -52,34 +51,30 @@
         </androidx.cardview.widget.CardView>
 
 
-
-
         <androidx.cardview.widget.CardView
+            android:id="@+id/motuPatluCard"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            app:cardBackgroundColor="#FEFEFE"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="20dp"
-            android:id="@+id/motuPatluCard"
             android:layout_below="@id/tomJerryCard"
             android:layout_marginTop="20dp"
-            >
+            app:cardBackgroundColor="#FEFEFE"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="4dp"
                 android:orientation="vertical"
-                >
+                android:padding="4dp">
 
                 <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:src="@drawable/motupatlu"
                     android:scaleType="centerCrop"
-                    app:riv_corner_radius="20dp"/>
+                    android:src="@drawable/motupatlu"
+                    app:riv_corner_radius="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -95,33 +90,30 @@
         </androidx.cardview.widget.CardView>
 
 
-
-
         <androidx.cardview.widget.CardView
+            android:id="@+id/doraemonCard"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            app:cardBackgroundColor="#FEFEFE"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="20dp"
-            android:id="@+id/doraemonCard"
             android:layout_below="@id/motuPatluCard"
             android:layout_marginTop="20dp"
-            >
+            app:cardBackgroundColor="#FEFEFE"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="4dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="4dp">
 
                 <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:src="@drawable/doraemon"
                     android:scaleType="centerCrop"
-                    app:riv_corner_radius="20dp"/>
+                    android:src="@drawable/doraemon"
+                    app:riv_corner_radius="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -137,34 +129,30 @@
         </androidx.cardview.widget.CardView>
 
 
-
-
         <androidx.cardview.widget.CardView
+            android:id="@+id/benTenCard"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            app:cardBackgroundColor="#FEFEFE"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="20dp"
-            android:id="@+id/benTenCard"
             android:layout_below="@id/doraemonCard"
             android:layout_marginTop="20dp"
-            >
+            app:cardBackgroundColor="#FEFEFE"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="4dp"
                 android:orientation="vertical"
-                >
+                android:padding="4dp">
 
                 <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:src="@drawable/ben10"
                     android:scaleType="center"
-                    app:riv_corner_radius="20dp"/>
+                    android:src="@drawable/ben10"
+                    app:riv_corner_radius="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -181,31 +169,29 @@
 
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/oggy_and_coakroaches_Card"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            app:cardBackgroundColor="#FEFEFE"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="20dp"
-            android:id="@+id/oggy_and_coakroaches_Card"
             android:layout_below="@id/benTenCard"
             android:layout_marginTop="20dp"
-            >
+            app:cardBackgroundColor="#FEFEFE"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="4dp"
                 android:orientation="vertical"
-                >
+                android:padding="4dp">
 
                 <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:src="@drawable/oggyfinal"
                     android:scaleType="centerCrop"
-                    app:riv_corner_radius="20dp"/>
+                    android:src="@drawable/oggyfinal"
+                    app:riv_corner_radius="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -221,37 +207,30 @@
         </androidx.cardview.widget.CardView>
 
 
-
-
-
-
-
         <androidx.cardview.widget.CardView
+            android:id="@+id/banglaCartoon"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            app:cardBackgroundColor="#FEFEFE"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="20dp"
-            android:id="@+id/banglaCartoon"
             android:layout_below="@id/oggy_and_coakroaches_Card"
             android:layout_marginTop="20dp"
-            >
+            app:cardBackgroundColor="#FEFEFE"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="4dp"
                 android:orientation="vertical"
-                >
+                android:padding="4dp">
 
                 <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:src="@drawable/banglacarton"
                     android:scaleType="centerCrop"
-                    app:riv_corner_radius="20dp"/>
+                    android:src="@drawable/banglacarton"
+                    app:riv_corner_radius="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -267,35 +246,30 @@
         </androidx.cardview.widget.CardView>
 
 
-
-
-
         <androidx.cardview.widget.CardView
+            android:id="@+id/mrBeanCard"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            app:cardBackgroundColor="#FEFEFE"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="20dp"
-            android:id="@+id/mrBeanCard"
             android:layout_below="@id/banglaCartoon"
             android:layout_marginTop="20dp"
-            >
+            app:cardBackgroundColor="#FEFEFE"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="4dp"
                 android:orientation="vertical"
-                >
+                android:padding="4dp">
 
                 <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:src="@drawable/mrbean"
                     android:scaleType="centerCrop"
-                    app:riv_corner_radius="20dp"/>
+                    android:src="@drawable/mrbean"
+                    app:riv_corner_radius="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -311,35 +285,30 @@
         </androidx.cardview.widget.CardView>
 
 
-
-
-
         <androidx.cardview.widget.CardView
+            android:id="@+id/hindiCartoonCard"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            app:cardBackgroundColor="#FEFEFE"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="20dp"
-            android:id="@+id/hindiCartoonCard"
             android:layout_below="@id/mrBeanCard"
             android:layout_marginTop="20dp"
-            >
+            app:cardBackgroundColor="#FEFEFE"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="4dp"
                 android:orientation="vertical"
-                >
+                android:padding="4dp">
 
                 <com.makeramen.roundedimageview.RoundedImageView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:src="@drawable/hindicartoon"
                     android:scaleType="centerCrop"
-                    app:riv_corner_radius="20dp"/>
+                    android:src="@drawable/hindicartoon"
+                    app:riv_corner_radius="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -355,10 +324,7 @@
         </androidx.cardview.widget.CardView>
 
 
-
     </RelativeLayout>
-
-
 
 
 </ScrollView>

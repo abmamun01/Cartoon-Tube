@@ -1,6 +1,15 @@
 package com.mamunsproject.youtubekids.Utils;
 
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MyConsts {
+
+
+
 
     public static final String ALL_CARTOON_ID = "PLf5D72Z_-C_WxboP01uSaltloc90fdYYu";
     public static final String TOM_JERRY_ID = "PLf5D72Z_-C_WiSeu7trh20NX4K3WkNDRc";
@@ -16,6 +25,19 @@ public class MyConsts {
 
 
 
-    public static final String APIKEY = "AIzaSyDWtq1wVkJaLmcz9KnFzxFLmiDu1DKnmxY";
+    public static final String APIKEY = "AIzaSyBQe0__ggAbF_iz5AUcTrq7G8Fjaj7mhcQ";
 
+
+
+
+}
+
+class mySecondConst extends AppCompatActivity{
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+
+    }
 }

@@ -8,12 +8,19 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface ApiInterface {
+
     @GET("playlistItems?part=snippet%2CcontentDetails")
-    Call<ResponseVideo> getAllVideos(@Query("maxResults")int max,
+    Call<ResponseVideo> getAllVideos(@Query("maxResults") int max,
                                      @Query("playlistId") String playlistId,
                                      @Query("key") String apiKey);
 
 
 
+
+    @GET("playlistItems?part=snippet%2CcontentDetails")
+    Call<ResponseVideo> getAllVideos(@Query("maxResults") int max,
+                                     @Query("playlistId") String playlistId,
+                                     @Query("key") String apiKey,
+                                     @Query("pageToken") String pageToken);
 
 }

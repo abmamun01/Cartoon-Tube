@@ -30,6 +30,7 @@ public class PlayList_Fragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_play_list_, container, false);
 
+
         tomJerryCard=view.findViewById(R.id.tomJerryCard);
         motuPatluCard=view.findViewById(R.id.motuPatluCard);
 

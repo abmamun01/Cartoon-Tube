@@ -18,5 +18,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/banglaCartoonRecyclerview"
         app:layout_constraintEnd_toEndOf="@+id/banglaCartoonRecyclerview"
         app:layout_constraintStart_toStartOf="parent"
+        android:indeterminateTint="@color/white"
+
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,7 @@ public class Snippet implements Serializable {
     public String description;
     public Thumbnail thumbnails;
 
+
+
+
 }
