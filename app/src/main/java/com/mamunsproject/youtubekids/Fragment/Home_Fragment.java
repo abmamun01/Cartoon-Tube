@@ -126,6 +126,7 @@ public class Home_Fragment extends Fragment {
                             loading = false;
                             Log.v("LastItemDetected", "Last Item Wow !");
 
+                            //
                             // Do pagination.. i.e. fetch new data
                             if (responseVideo != null) {
                                 nextPageToken = responseVideo.getPageToken();
